@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Download icmarkets mt5
         run: |
+          rm -rf deps
           mkdir -p deps
           curl -L "https://download.mql5.com/cdn/web/18040/mt5/icmarketssc5setup.exe" -o deps/icmarketssc5setup.exe
           ls -lh deps/
